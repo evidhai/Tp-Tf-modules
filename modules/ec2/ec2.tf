@@ -4,5 +4,5 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
   vpc_security_group_ids = var.ec2_sg_ids
   availability_zone      = var.availability_zone
-  tags =  merge(locals.tags,var.tags)
+  tags =  merge(local.tags,var.tags)
 }
