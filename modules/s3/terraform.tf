@@ -10,3 +10,9 @@ terraform {
 provider "aws" {
   region = "us-west-2"
 }
+
+
+provider "aws" {
+  alias  = "eu"
+  region = "eu-west-1"
+}
